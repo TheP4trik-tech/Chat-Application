@@ -56,6 +56,10 @@ group :development, :test do
   # Fake data generating
   gem "faker", ">= 3.8"
 
+  ## helper gem in Rspec
+  gem "shoulda-matchers", ">= 6.2"
+
+
    # Factory bot for template used for testing
    gem "factory_bot_rails", ">= 6.5.1"
 

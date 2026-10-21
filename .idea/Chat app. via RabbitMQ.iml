@@ -138,6 +138,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v3.7.0, RVM: ruby-3.3.11) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.4.1, RVM: ruby-3.3.11) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.51.0, RVM: ruby-3.3.11) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="shoulda-matchers (v8.0.1, RVM: ruby-3.3.11) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="solid_cable (v4.1.0, RVM: ruby-3.3.11) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="solid_cache (v1.0.10, RVM: ruby-3.3.11) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="solid_queue (v1.7.0, RVM: ruby-3.3.11) [gem]" level="application" />

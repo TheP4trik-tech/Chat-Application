@@ -10,11 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_10_14_144429) do
+ActiveRecord::Schema[8.1].define(version: 2026_10_14_145802) do
+  create_table "chats", force: :cascade do |t|
+    t.integer "sender_id", null: false
+    t.integer "recipient_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["recipient_id"], name: "index_chats_on_recipient_id"
+    t.index ["sender_id"], name: "index_chats_on_sender_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_foreign_key "chats", "users", column: "recipient_id"
+  add_foreign_key "chats", "users", column: "sender_id"
 end
