@@ -10,14 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_10_14_145802) do
+ActiveRecord::Schema[8.1].define(version: 2026_11_16_160000) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "pg_catalog.plpgsql"
+
   create_table "chats", force: :cascade do |t|
     t.integer "sender_id", null: false
     t.integer "recipient_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index "LEAST(sender_id, recipient_id), GREATEST(sender_id, recipient_id)", name: "index_chats_on_unordered_user_pair", unique: true
     t.index ["recipient_id"], name: "index_chats_on_recipient_id"
     t.index ["sender_id"], name: "index_chats_on_sender_id"
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.integer "chat_id", null: false
+    t.integer "sender_id", null: false
+    t.text "content", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["chat_id"], name: "index_messages_on_chat_id"
+    t.index ["sender_id"], name: "index_messages_on_sender_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -29,4 +43,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_14_145802) do
 
   add_foreign_key "chats", "users", column: "recipient_id"
   add_foreign_key "chats", "users", column: "sender_id"
+  add_foreign_key "messages", "chats"
+  add_foreign_key "messages", "users", column: "sender_id"
 end
