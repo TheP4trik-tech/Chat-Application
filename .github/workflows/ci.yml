@@ -97,6 +97,11 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Debug - check master key is actually passed through (prints length only, never the value)
+        env:
+          RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+        run: echo "RAILS_MASTER_KEY length is ${#RAILS_MASTER_KEY} chars"
+
       - name: Run System Tests & RSpec
         env:
           RAILS_ENV: test
