@@ -24,5 +24,15 @@ RSpec.describe User, type: :model do
     expect(user1.initiated_chats).not_to include(chat2)
   end
 
-  it "should delete all chats of a user when user is deleted"
+  it "should delete all chats of a user when user is deleted" do
+    user1 = create(:user)
+    user2 = create(:user)
+    user3 = create(:user)
+    chat1 = create(:chat, sender: user1, recipient: user2)
+    chat2 = create(:chat, sender: user2, recipient: user3)
+
+    expect { user1.destroy }.to change(Chat, :count).by(-1)
+    expect(Chat.exists?(chat1.id)).to be false
+    expect(Chat.exists?(chat2.id)).to be true
+  end
 end
