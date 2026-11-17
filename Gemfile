@@ -7,6 +7,8 @@ gem "propshaft"
 # Use PostgreSQL as the database for Active Record
 gem "pg"
 # JWT authentication
+# CORS
+gem "rack-cors"
 gem "devise-jwt"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
