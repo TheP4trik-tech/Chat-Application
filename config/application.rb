@@ -21,6 +21,12 @@ module ChatAppViaRabbitMq
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
+    # Devise/Warden still writes to the session internally on sign_in/sign_up
+    # even though we authenticate via JWT. Without this, API-only mode's
+    # missing session middleware raises DisabledSessionError.
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CacheStore
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
