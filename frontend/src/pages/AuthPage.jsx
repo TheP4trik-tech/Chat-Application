@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {
+  Alert,
   Anchor,
   Button,
   Center,
@@ -13,10 +14,56 @@ import {
   ThemeIcon,
   Title,
 } from '@mantine/core'
-import { IconMessageCircle2 } from '@tabler/icons-react'
+import { IconAlertCircle, IconMessageCircle2 } from '@tabler/icons-react'
 
 function AuthPage() {
   const [mode, setMode] = useState('login')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [error, setError] = useState(null) // null = no error to show
+  const handleLogin = (e) => {
+      e.preventDefault()
+      console.log(`Hello ${email}!`)
+  }
+
+  // calling RAILS API
+  const handleSingup = async (e) => {
+    e.preventDefault()
+    setError(null) // clear the previous error before a new attempt
+
+    try {
+      const response = await fetch('http://localhost:3000/api/v1/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          user: {
+            email: email,
+            password: password,
+            first_name: firstName,
+            last_name: lastName,
+          },
+        }),
+      })
+      const data = await response.json()
+
+      if (response.ok) {
+        const token = response.headers.get('Authorization')
+        localStorage.setItem('token', token)
+      } else {
+        // Rails answered, but said no (e.g. 422) → show its messages
+        setError(data.errors?.join(', ') || 'Sign up failed.')
+      }
+    } catch {
+      // Rails couldn't be reached at all
+      setError('Could not reach the server. Is Rails running?')
+    }
+  }
+
+
 
   return (
     <Center
@@ -35,6 +82,20 @@ function AuthPage() {
           </Title>
         </Group>
 
+        {error && (
+          <Alert
+            variant="light"
+            color="red"
+            title="Something went wrong"
+            icon={<IconAlertCircle size={18} />}
+            withCloseButton
+            onClose={() => setError(null)}
+            mb="md"
+          >
+            {error}
+          </Alert>
+        )}
+
         <Tabs value={mode} onChange={setMode} radius="md">
           <Tabs.List grow mb="lg">
             <Tabs.Tab value="login">Log in</Tabs.Tab>
@@ -42,30 +103,34 @@ function AuthPage() {
           </Tabs.List>
 
           <Tabs.Panel value="login">
-            <Stack gap="md">
-              <TextInput label="Email" placeholder="you@example.com" />
-              <PasswordInput label="Password" placeholder="••••••••" />
-              <Anchor size="sm" ta="right">
-                Forgot password?
-              </Anchor>
-              <Button fullWidth color="teal" radius="md">
-                Log in
-              </Button>
-            </Stack>
+            <form onSubmit={handleLogin}>
+              <Stack gap="md">
+                <TextInput label="Email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="you@example.com" />
+                <PasswordInput label="Password" onChange={(e) => setPassword(e.target.value)} value={password} placeholder="••••••••" />
+                <Anchor size="sm" ta="right">
+                  Forgot password?
+                </Anchor>
+                <Button type="submit" fullWidth color="teal" radius="md">
+                  Log in
+                </Button>
+              </Stack>
+            </form>
           </Tabs.Panel>
 
           <Tabs.Panel value="signup">
-            <Stack gap="md">
-              <Group grow>
-                <TextInput label="First name" placeholder="Patrik" />
-                <TextInput label="Last name" placeholder="Hvezdič" />
-              </Group>
-              <TextInput label="Email" placeholder="you@example.com" />
-              <PasswordInput label="Password" placeholder="••••••••" />
-              <Button fullWidth color="teal" radius="md">
-                Create account
-              </Button>
-            </Stack>
+            <form onSubmit={handleSingup}>
+              <Stack gap="md">
+                <Group grow>
+                  <TextInput label="First name" placeholder="Joe" onChange={(e) => setFirstName(e.target.value)} value={firstName} />
+                  <TextInput label="Last name" placeholder="Doe" onChange={(e) => setLastName(e.target.value)} value={lastName} />
+                </Group>
+                <TextInput label="Email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="you@example.com" />
+                <PasswordInput label="Password" onChange={(e) => setPassword(e.target.value)} value={password} placeholder="••••••••" />
+                <Button type="submit" fullWidth color="teal" radius="md">
+                  Create account
+                </Button>
+              </Stack>
+            </form>
           </Tabs.Panel>
         </Tabs>
 
