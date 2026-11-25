@@ -9,11 +9,13 @@ import {ProtectedRoute} from "./components/ProtectedRoute.tsx";
 function App() {
     return(
     <Routes>
-        <ProtectedRoute path="/settings" element={<Settings />} />
-        <ProtectedRoute path="/users"  />
-        <ProtectedRoute path="/chats" element={<Chats />} />
-        <ProtectedRoute path="/chat/:id" element={<Chat />} />
+        <ProtectedRoute>
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/users"  />
+        <Route path="/chats" element={<Chats />} />
+        <Route path="/chat/:id" element={<Chat />} />
         <Route index element={<AuthPage />} />
+        </ProtectedRoute>
     </Routes>
     )
 }
