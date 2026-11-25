@@ -52,7 +52,10 @@ function AuthPage() {
 
       if (response.ok) {
         const token = response.headers.get('Authorization')
+        const { first_name, last_name, id } = data.user
+        // storing the token and user data in local storage
         localStorage.setItem('token', token)
+        localStorage.setItem('user', JSON.stringify({ id, first_name, last_name }))
       } else {
         // Rails answered, but said no (e.g. 422) → show its messages
         setError(data.errors?.join(', ') || 'Sign up failed.')
