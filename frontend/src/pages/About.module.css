@@ -1,0 +1,56 @@
+.bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--mantine-spacing-md);
+}
+
+.bentoWide {
+  grid-column: span 2;
+  min-height: 220px;
+}
+
+.bentoTall {
+  grid-row: span 2;
+  min-height: 220px;
+}
+
+.bentoNormal {
+  min-height: 220px;
+}
+
+@media (max-width: 62em) {
+  .bento {
+    grid-template-columns: 1fr;
+  }
+
+  .bentoWide,
+  .bentoTall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+.marqueeViewport {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  animation: about-marquee 32s linear infinite;
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes about-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

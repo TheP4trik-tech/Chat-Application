@@ -1,0 +1,35 @@
+- generic [ref=f5e3]:
+  - banner [ref=f5e4]:
+    - generic [ref=f5e5]:
+      - link [ref=f5e6] [cursor=pointer]:
+        - /url: /about
+        - paragraph [ref=f5e10]: Chattero
+      - generic [ref=f5e11]:
+        - button "Toggle color scheme" [ref=f5e12]
+        - link "← About" [ref=f5e17]:
+          - /url: /about
+  - generic [ref=f5e20]:
+    - generic [ref=f5e21]:
+      - heading "Chattero" [level=2] [ref=f5e26]
+      - generic [ref=f5e27]:
+        - tablist [ref=f5e28]:
+          - tab "Log in" [selected] [ref=f5e29]
+          - tab "Sign up" [ref=f5e31]
+        - tabpanel "Log in" [ref=f5e33]:
+          - generic [ref=f5e35]:
+            - generic [ref=f5e36]:
+              - generic [ref=f5e37]: Email
+              - textbox "Email" [ref=f5e39]:
+                - /placeholder: you@example.com
+            - generic [ref=f5e40]:
+              - generic [ref=f5e41]: Password
+              - generic [ref=f5e42]:
+                - textbox "Password" [ref=f5e44]:
+                  - /placeholder: ••••••••
+                - button "Toggle password visibility" [ref=f5e46]
+            - button "Log in" [ref=f5e52]
+      - paragraph [ref=f5e55]: Don't have an account? Sign up
+    - paragraph [ref=f5e56]:
+      - text: Made by
+      - link "TheP4trik-tech" [ref=f5e57]:
+        - /url: https://github.com/TheP4trik-tech

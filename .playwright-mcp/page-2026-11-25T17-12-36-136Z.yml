@@ -1,0 +1,478 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link "Resend" [ref=e8] [cursor=pointer]:
+          - /url: /home
+          - img "Resend" [ref=e9]
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - button "Features" [ref=e13]
+          - listitem [ref=e16]:
+            - button "Company" [ref=e17]
+          - listitem [ref=e20]:
+            - button "Enterprise" [ref=e21]
+          - listitem [ref=e24]:
+            - button "Help" [ref=e25]
+          - listitem [ref=e28]:
+            - button "Docs" [ref=e29]
+          - listitem [ref=e32]:
+            - button "AI" [ref=e33]
+          - listitem [ref=e36]:
+            - link "Pricing" [ref=e37] [cursor=pointer]:
+              - /url: /pricing
+        - generic [ref=e38]:
+          - link "Log in" [ref=e39] [cursor=pointer]:
+            - /url: /login
+          - link "Get started" [ref=e40] [cursor=pointer]:
+            - /url: /signup
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic:
+          - generic:
+            - generic:
+              - img "Resend"
+      - heading "Building the modern email sending platform" [level=1] [ref=e44]
+      - paragraph [ref=e45]: The web has come a long way in the last ten years, but why is email stuck in the past?It doesn't have to be that way. We want to change that. We want to reimagine email.
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - heading "Our story" [level=2] [ref=e49]
+        - paragraph [ref=e51]:
+          - text: Resend started with an
+          - strong [ref=e52]: open source
+          - text: project in 2022. We were
+          - strong [ref=e53]: frustrated
+          - text: by how difficult it was to build
+          - strong [ref=e54]: modern
+          - text: email templates that
+          - strong [ref=e55]: worked well
+          - text: across all email clients.As we started to dig deeper,
+          - strong [ref=e56]: it became clear
+          - text: that this was just the tip of the iceberg. We realized that sending emails that
+          - strong [ref=e57]: reach the inbox
+          - text: (not the spam folder) was the biggest pain point, so we started to
+          - strong [ref=e58]: explore something new
+          - text: .In 2023, we launched an entire email sending platform and joined
+          - strong [ref=e59]: Y Combinator's
+          - text: winter batch. We're creating something special here, and we're excited to build it with you.
+      - generic [ref=e60]:
+        - heading "The founders" [level=2] [ref=e61]
+        - paragraph [ref=e62]: Three builders who care aboutcraft, attention to detail, and quality.
+        - link "Meet the team" [ref=e63] [cursor=pointer]:
+          - /url: /humans
+        - img "A picture of the Resend founding team, 3 people smiling in a coworking space" [ref=e67]
+        - paragraph [ref=e68]:
+          - text: "From left to right:"
+          - link "Zeno Rocha" [ref=e69] [cursor=pointer]:
+            - /url: /humans/zeno-rocha
+          - text: ","
+          - link "Bu Kinoshita" [ref=e71] [cursor=pointer]:
+            - /url: /humans/bu-kinoshita
+          - text: ", and"
+          - link "Jonni Lundy" [ref=e73] [cursor=pointer]:
+            - /url: /humans/jonni-lundy
+      - generic [ref=e76]:
+        - heading "What we believe" [level=2] [ref=e77]
+        - paragraph [ref=e79]: Principles that dictate how we think, behave, and make decisions.
+        - generic [ref=e80]:
+          - generic [ref=e82]: Dec 6th, 2022
+          - generic [ref=e91]:
+            - link [ref=e92] [cursor=pointer]:
+              - /url: /humans/zeno-rocha
+              - img "Photo of Zeno Rocha" [ref=e94]
+              - paragraph [ref=e95]: Zeno Rocha
+              - paragraph [ref=e96]: <zeno@resend.com>
+            - heading "Do work that inspires others" [level=2] [ref=e97]
+            - paragraph [ref=e99]:
+              - text: You can't inspire people by doing an “okay” job. To inspire, you need to do
+              - strong [ref=e100]: phenomenal work
+              - text: . Quality is not a plus; it's a
+              - strong [ref=e101]: must-have
+              - text: . We know nothing will ever be perfect, but that doesn't stop us from pushing the limits. We don't want to just meet the bar of our peers. We want to
+              - strong [ref=e102]: raise the bar
+              - text: . The sum of all the
+              - strong [ref=e103]: small details
+              - text: is what makes something special.
+        - generic [ref=e104]:
+          - generic [ref=e106]: Jan 2nd, 2023
+          - generic [ref=e115]:
+            - link [ref=e116] [cursor=pointer]:
+              - /url: /humans/jonni-lundy
+              - img "Photo of Jonni Lundy" [ref=e118]
+              - paragraph [ref=e119]: Jonni Lundy
+              - paragraph [ref=e120]: <jonni@resend.com>
+            - heading "No ego" [level=2] [ref=e121]
+            - paragraph [ref=e123]:
+              - text: Helping others is part of the job. It's okay to admit you don't know something and
+              - strong [ref=e124]: ask for help
+              - text: "- it's a sign of strength, not weakness. We work together as an async team and"
+              - strong [ref=e125]: assume positive intent
+              - text: . We communicate in a kind, direct, and
+              - strong [ref=e126]: transparent way
+              - text: .
+        - generic [ref=e127]:
+          - generic [ref=e129]: Dec 6th, 2022
+          - generic [ref=e138]:
+            - link [ref=e139] [cursor=pointer]:
+              - /url: /humans/bu-kinoshita
+              - img "Photo of Bu Kinoshita" [ref=e141]
+              - paragraph [ref=e142]: Bu Kinoshita
+              - paragraph [ref=e143]: <bu@resend.com>
+            - heading "Keep shipping" [level=2] [ref=e144]
+            - paragraph [ref=e146]:
+              - text: Speed is key. We prioritize ruthlessly, have a strong
+              - strong [ref=e147]: sense of urgency
+              - text: ", and"
+              - strong [ref=e148]: make decisions fast
+              - text: . We constantly review the scope of a project and work toward a v0, not a v1. We
+              - strong [ref=e149]: ship early
+              - text: ", and we"
+              - strong [ref=e150]: ship often
+              - text: .
+        - generic [ref=e151]:
+          - generic [ref=e153]: May 15th, 2023
+          - generic [ref=e162]:
+            - link [ref=e163] [cursor=pointer]:
+              - /url: /humans/zeh-fernandes
+              - img "Photo of Zeh Fernandes" [ref=e165]
+              - paragraph [ref=e166]: Zeh Fernandes
+              - paragraph [ref=e167]: <zeh@resend.com>
+            - heading "Default to action" [level=2] [ref=e168]
+            - paragraph [ref=e170]:
+              - text: Regardless of what you do, we are all makers, and
+              - strong [ref=e171]: makers don't wait
+              - text: . When we see a problem, we don't expect someone to fix it or tell us what to do. Instead,
+              - strong [ref=e172]: we take initiative
+              - text: ", find creative ways around it, and send a pull request to solve it. Remember -"
+              - strong [ref=e173]: no problem is too small
+              - text: .
+      - generic [ref=e174]:
+        - heading "The team behind it" [level=2] [ref=e175]
+        - paragraph [ref=e176]: A fully remote team on a mission to buildthe best communication platform for developers.
+        - link "Meet the team" [ref=e177] [cursor=pointer]:
+          - /url: /humans
+        - img "A picture of the Resend team at Florence" [ref=e181]
+        - paragraph [ref=e182]: Resend Team at Rio de Janeiro Offsite 2026
+      - generic [ref=e183]:
+        - heading "Backed by incredible investors" [level=2] [ref=e184]
+        - paragraph [ref=e185]: We are fortunate to work with some of the best investors in the world. Chances are you are already using the products they helped to create.
+        - generic [ref=e186]:
+          - img "Y Combinator" [ref=e187]
+          - img "a16z" [ref=e188]
+          - img "SV Angel" [ref=e189]
+        - generic [ref=e190]:
+          - generic [ref=e191]:
+            - img "Ali Rowghani" [ref=e192]
+            - generic [ref=e193]:
+              - paragraph [ref=e194]: Ali Rowghani
+              - paragraph [ref=e195]: Investor, ex-CFO of Pixar
+          - generic [ref=e196]:
+            - img "Alana Goyal" [ref=e197]
+            - generic [ref=e198]:
+              - paragraph [ref=e199]: Alana Goyal
+              - paragraph [ref=e200]: Founder of Basecase
+          - generic [ref=e201]:
+            - img "Ahmad Awais" [ref=e202]
+            - generic [ref=e203]:
+              - paragraph [ref=e204]: Ahmad Awais
+              - paragraph [ref=e205]: Founder of Langbase
+          - generic [ref=e206]:
+            - img "Britton Winterrose" [ref=e207]
+            - generic [ref=e208]:
+              - paragraph [ref=e209]: Britton Winterrose
+              - paragraph [ref=e210]: AI Advisor at Microsoft
+          - generic [ref=e211]:
+            - img "Briza Rocha" [ref=e212]
+            - generic [ref=e213]:
+              - paragraph [ref=e214]: Briza Rocha
+              - paragraph [ref=e215]: Director at Alibaba
+          - generic [ref=e216]:
+            - img "Calvin French-Owen" [ref=e217]
+            - generic [ref=e218]:
+              - paragraph [ref=e219]: Calvin French-Owen
+              - paragraph [ref=e220]: Co-Founder of Segment
+          - generic [ref=e221]:
+            - img "Cassidy Williams" [ref=e222]
+            - generic [ref=e223]:
+              - paragraph [ref=e224]: Cassidy Williams
+              - paragraph [ref=e225]: Director at GitHub
+          - generic [ref=e226]:
+            - img "Christopher Golda" [ref=e227]
+            - generic [ref=e228]:
+              - paragraph [ref=e229]: Christopher Golda
+              - paragraph [ref=e230]: Founder of Rogue Capital
+          - generic [ref=e231]:
+            - img "Darian Shirazi" [ref=e232]
+            - generic [ref=e233]:
+              - paragraph [ref=e234]: Darian Shirazi
+              - paragraph [ref=e235]: GP at Gradient
+          - generic [ref=e236]:
+            - img "David Cramer" [ref=e237]
+            - generic [ref=e238]:
+              - paragraph [ref=e239]: David Cramer
+              - paragraph [ref=e240]: Co-Founder of Sentry
+          - generic [ref=e241]:
+            - img "David Mytton" [ref=e242]
+            - generic [ref=e243]:
+              - paragraph [ref=e244]: David Mytton
+              - paragraph [ref=e245]: Co-Founder of Console
+          - generic [ref=e246]:
+            - img "Diana Hu" [ref=e247]
+            - generic [ref=e248]:
+              - paragraph [ref=e249]: Diana Hu
+              - paragraph [ref=e250]: Partner at Y Combinator
+          - generic [ref=e251]:
+            - img "Dylan Field" [ref=e252]
+            - generic [ref=e253]:
+              - paragraph [ref=e254]: Dylan Field
+              - paragraph [ref=e255]: Founder of Figma
+          - generic [ref=e256]:
+            - img "Elad Gil" [ref=e257]
+            - generic [ref=e258]:
+              - paragraph [ref=e259]: Elad Gil
+              - paragraph [ref=e260]: Investor
+          - generic [ref=e261]:
+            - img "Eric Muntz" [ref=e262]
+            - generic [ref=e263]:
+              - paragraph [ref=e264]: Eric Muntz
+              - paragraph [ref=e265]: Former CTO of Mailchimp
+          - generic [ref=e266]:
+            - img "Guillermo Rauch" [ref=e267]
+            - generic [ref=e268]:
+              - paragraph [ref=e269]: Guillermo Rauch
+              - paragraph [ref=e270]: Founder of Vercel
+          - generic [ref=e271]:
+            - img "Jack McCloy" [ref=e272]
+            - generic [ref=e273]:
+              - paragraph [ref=e274]: Jack McCloy
+              - paragraph [ref=e275]: Engineering at Notion
+          - generic [ref=e276]:
+            - img "James Hawkins" [ref=e277]
+            - generic [ref=e278]:
+              - paragraph [ref=e279]: James Hawkins
+              - paragraph [ref=e280]: Co-Founder of Posthog
+          - generic [ref=e281]:
+            - img "Jean-Denis Greze" [ref=e282]
+            - generic [ref=e283]:
+              - paragraph [ref=e284]: Jean-Denis Greze
+              - paragraph [ref=e285]: Co-Founder of Town
+          - generic [ref=e286]:
+            - img "Jeff Henriod" [ref=e287]
+            - generic [ref=e288]:
+              - paragraph [ref=e289]: Jeff Henriod
+              - paragraph [ref=e290]: Founder at Laird Ventures
+          - generic [ref=e291]:
+            - img "Jennifer Li" [ref=e292]
+            - generic [ref=e293]:
+              - paragraph [ref=e294]: Jennifer Li
+              - paragraph [ref=e295]: GP at a16z
+          - generic [ref=e296]:
+            - img "Kenneth Auchenberg" [ref=e297]
+            - generic [ref=e298]:
+              - paragraph [ref=e299]: Kenneth Auchenberg
+              - paragraph [ref=e300]: Product Lead at Stripe
+          - generic [ref=e301]:
+            - img "Lachy Groom" [ref=e302]
+            - generic [ref=e303]:
+              - paragraph [ref=e304]: Lachy Groom
+              - paragraph [ref=e305]: Investor
+          - generic [ref=e306]:
+            - img "Lee Robinson" [ref=e307]
+            - generic [ref=e308]:
+              - paragraph [ref=e309]: Lee Robinson
+              - paragraph [ref=e310]: ML at Cursor
+          - generic [ref=e311]:
+            - img "Michael Grinich" [ref=e312]
+            - generic [ref=e313]:
+              - paragraph [ref=e314]: Michael Grinich
+              - paragraph [ref=e315]: Founder of WorkOS
+          - generic [ref=e316]:
+            - img "Paul Copplestone" [ref=e317]
+            - generic [ref=e318]:
+              - paragraph [ref=e319]: Paul Copplestone
+              - paragraph [ref=e320]: Co-Founder of Supabase
+          - generic [ref=e321]:
+            - img "Shawn Wang" [ref=e322]
+            - generic [ref=e323]:
+              - paragraph [ref=e324]: Shawn Wang
+              - paragraph [ref=e325]: Founder of Devtools-Angels
+          - generic [ref=e326]:
+            - img "Sidharth Kakkar" [ref=e327]
+            - generic [ref=e328]:
+              - paragraph [ref=e329]: Sidharth Kakkar
+              - paragraph [ref=e330]: Co-Founder of Subscript
+          - generic [ref=e331]:
+            - img "Theo Browne" [ref=e332]
+            - generic [ref=e333]:
+              - paragraph [ref=e334]: Theo Browne
+              - paragraph [ref=e335]: Founder of Ping
+          - generic [ref=e336]:
+            - img "Thomas Paul Mann" [ref=e337]
+            - generic [ref=e338]:
+              - paragraph [ref=e339]: Thomas Paul Mann
+              - paragraph [ref=e340]: Co-Founder of Raycast
+          - generic [ref=e341]:
+            - img "Tido Carriero" [ref=e342]
+            - generic [ref=e343]:
+              - paragraph [ref=e344]: Tido Carriero
+              - paragraph [ref=e345]: VP of Product at Cursor
+          - generic [ref=e346]:
+            - img "Yoko Li" [ref=e347]
+            - generic [ref=e348]:
+              - paragraph [ref=e349]: Yoko Li
+              - paragraph [ref=e350]: Partner at a16z
+      - generic [ref=e351]:
+        - heading "We're hiring" [level=2] [ref=e352]
+        - paragraph [ref=e353]: We're creating something special here, and we're looking for people who care deeply about quality to build it with us.
+        - link "See open positions" [ref=e354] [cursor=pointer]:
+          - /url: /careers#open-positions
+      - generic [ref=e358]:
+        - heading "From our blog" [level=2] [ref=e359]
+        - list [ref=e360]:
+          - listitem [ref=e361]:
+            - link [ref=e362] [cursor=pointer]:
+              - /url: /blog/series-a
+              - img "Resend raises $18M Series A" [ref=e364]
+              - heading "Resend raises $18M Series A" [level=3] [ref=e365]
+            - time [ref=e367]: Dec 4, 2024
+          - listitem [ref=e368]:
+            - link [ref=e369] [cursor=pointer]:
+              - /url: /blog/y-combinator
+              - img "Resend + Y Combinator" [ref=e371]
+              - heading "Resend + Y Combinator" [level=3] [ref=e372]
+            - time [ref=e374]: Feb 1, 2023
+          - listitem [ref=e375]:
+            - link [ref=e376] [cursor=pointer]:
+              - /url: /blog/introducing-resend
+              - img "Introducing Resend" [ref=e378]
+              - heading "Introducing Resend" [level=3] [ref=e379]
+            - time [ref=e381]: Jan 4, 2023
+    - contentinfo [ref=e382]:
+      - generic [ref=e383]:
+        - paragraph [ref=e384]: "2261 Market Street #5039San Francisco, CA 94114"
+        - generic [ref=e385]:
+          - link [ref=e386] [cursor=pointer]:
+            - /url: https://x.com/resend
+            - img "X" [ref=e387]
+          - link [ref=e388] [cursor=pointer]:
+            - /url: https://github.com/resend
+            - img "GitHub" [ref=e389]
+          - link [ref=e390] [cursor=pointer]:
+            - /url: https://linkedin.com/company/resend
+            - img "LinkedIn" [ref=e391]
+          - link [ref=e392] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UC0FkhoSz2kYqHVBk4L0QYIg
+            - img "Youtube" [ref=e393]
+        - link "All systems operational" [ref=e394] [cursor=pointer]:
+          - /url: /status
+      - generic [ref=e400]:
+        - generic [ref=e401]:
+          - paragraph [ref=e402]: Features
+          - list [ref=e403]:
+            - listitem [ref=e404]:
+              - link "Automations" [ref=e405] [cursor=pointer]:
+                - /url: /features/automations
+            - listitem [ref=e406]:
+              - link "Audiences" [ref=e407] [cursor=pointer]:
+                - /url: /features/audiences
+            - listitem [ref=e408]:
+              - link "Broadcasts" [ref=e409] [cursor=pointer]:
+                - /url: /features/broadcasts
+            - listitem [ref=e410]:
+              - link "Inbound" [ref=e411] [cursor=pointer]:
+                - /url: /features/inbound
+            - listitem [ref=e412]:
+              - link "Inboxes" [ref=e413] [cursor=pointer]:
+                - /url: /products/inboxes
+            - listitem [ref=e414]:
+              - link "Templates" [ref=e415] [cursor=pointer]:
+                - /url: /features/templates
+            - listitem [ref=e416]:
+              - link "Webhooks" [ref=e417] [cursor=pointer]:
+                - /url: /features/webhooks
+            - listitem [ref=e418]:
+              - link "Dedicated IPs" [ref=e419] [cursor=pointer]:
+                - /url: /features/dedicated-ips
+        - generic [ref=e420]:
+          - paragraph [ref=e421]: Resources
+          - list [ref=e422]:
+            - listitem [ref=e423]:
+              - link "Changelog" [ref=e424] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e425]:
+              - link "Pricing" [ref=e426] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e427]:
+              - link "Enterprise" [ref=e428] [cursor=pointer]:
+                - /url: /enterprise
+            - listitem [ref=e429]:
+              - link "Security" [ref=e430] [cursor=pointer]:
+                - /url: /security
+            - listitem [ref=e431]:
+              - link "SOC 2" [ref=e432] [cursor=pointer]:
+                - /url: /security/soc-2
+            - listitem [ref=e433]:
+              - link "GDPR" [ref=e434] [cursor=pointer]:
+                - /url: /security/gdpr
+            - listitem [ref=e435]:
+              - link "Brand" [ref=e436] [cursor=pointer]:
+                - /url: /brand
+        - generic [ref=e437]:
+          - paragraph [ref=e438]: Company
+          - list [ref=e439]:
+            - listitem [ref=e440]:
+              - link "About" [ref=e441] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e442]:
+              - link "Blog" [ref=e443] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e444]:
+              - link "Careers" [ref=e445] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=e446]:
+              - link "Clubs" [ref=e447] [cursor=pointer]:
+                - /url: /clubs
+            - listitem [ref=e448]:
+              - link "Customers" [ref=e449] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e450]:
+              - link "Humans" [ref=e451] [cursor=pointer]:
+                - /url: /humans
+            - listitem [ref=e452]:
+              - link "Philosophy" [ref=e453] [cursor=pointer]:
+                - /url: /philosophy
+        - generic [ref=e454]:
+          - paragraph [ref=e455]: Help
+          - list [ref=e456]:
+            - listitem [ref=e457]:
+              - link "Support" [ref=e458] [cursor=pointer]:
+                - /url: /support
+            - listitem [ref=e459]:
+              - link "Status" [ref=e460] [cursor=pointer]:
+                - /url: /status
+            - listitem [ref=e461]:
+              - link "Migrate" [ref=e462] [cursor=pointer]:
+                - /url: /migrate
+            - listitem [ref=e463]:
+              - link "Knowledge base" [ref=e464] [cursor=pointer]:
+                - /url: https://resend.com/docs/knowledge-base/introduction
+            - listitem [ref=e465]:
+              - link "Legal policies" [ref=e466] [cursor=pointer]:
+                - /url: /legal
+        - generic [ref=e467]:
+          - paragraph [ref=e468]: Community
+          - list [ref=e469]:
+            - listitem [ref=e470]:
+              - link "Events" [ref=e471] [cursor=pointer]:
+                - /url: /events
+            - listitem [ref=e472]:
+              - link "Insiders" [ref=e473] [cursor=pointer]:
+                - /url: /insiders
+            - listitem [ref=e474]:
+              - link "Open source" [ref=e475] [cursor=pointer]:
+                - /url: /open-source
+            - listitem [ref=e476]:
+              - link "Wallpapers" [ref=e477] [cursor=pointer]:
+                - /url: /wallpapers
+  - region "Notifications alt+T"
+  - alert [ref=e478]

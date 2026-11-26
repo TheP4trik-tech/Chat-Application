@@ -1,0 +1,544 @@
+- generic [active] [ref=e1]:
+  - progressbar [aria-hidden] [ref=e2]
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "Elements" [ref=e9] [cursor=pointer]:
+            - /url: /elements
+          - link "Challenges" [ref=e13] [cursor=pointer]:
+            - /url: /challenges
+          - link "Blog" [ref=e14] [cursor=pointer]:
+            - /url: /blog
+          - link "AI Design Systems New" [ref=e15] [cursor=pointer]:
+            - /url: /design
+            - text: AI Design Systems
+            - generic [ref=e16]: New
+        - generic [ref=e17]:
+          - link "Create" [ref=e20] [cursor=pointer]:
+            - /url: /elements?create-account
+          - link "Join the Community" [ref=e23] [cursor=pointer]:
+            - /url: /elements?create-account
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - heading "Browse all" [level=1] [ref=e30]
+        - paragraph [ref=e31]: Open-Source UI elements made with CSS or Tailwind
+      - generic [ref=e34]:
+        - generic [ref=e35]: First page
+        - generic [ref=e36]:
+          - generic [ref=e38]:
+            - generic [ref=e39] [cursor=pointer]: All
+            - generic [ref=e40] [cursor=pointer]: Tailwind
+            - generic [ref=e44] [cursor=pointer]: CSS
+          - 'button "Sort: Randomized" [ref=e49] [cursor=pointer]':
+            - generic [ref=e52]: "Sort:"
+            - text: Randomized
+          - button "Any theme" [ref=e56] [cursor=pointer]
+          - textbox "Search tags, users, posts..." [ref=e63]
+      - generic [ref=e64]:
+        - article [ref=e65]:
+          - generic [ref=e66]:
+            - link "Get code" [ref=e68] [cursor=pointer]:
+              - /url: /catraco/brown-dodo-68
+            - generic [ref=e71]:
+              - generic [ref=e72] [cursor=pointer]
+              - link "Link to post" [ref=e73] [cursor=pointer]:
+                - /url: /catraco/brown-dodo-68
+          - generic [ref=e74]:
+            - link "catraco" [ref=e76] [cursor=pointer]:
+              - /url: /profile/catraco
+            - button [ref=e80] [cursor=pointer]
+        - article [ref=e83]:
+          - generic [ref=e84]:
+            - link "Get code" [ref=e86] [cursor=pointer]:
+              - /url: /ozgeozkaraa01/sharp-rattlesnake-74
+            - generic [ref=e89]:
+              - generic [ref=e90] [cursor=pointer]
+              - link "Link to post" [ref=e91] [cursor=pointer]:
+                - /url: /ozgeozkaraa01/sharp-rattlesnake-74
+          - generic [ref=e92]:
+            - link "ozgeozkaraa01" [ref=e94] [cursor=pointer]:
+              - /url: /profile/ozgeozkaraa01
+            - button [ref=e98] [cursor=pointer]
+        - article [ref=e101]:
+          - generic [ref=e102]:
+            - link "Get code" [ref=e104] [cursor=pointer]:
+              - /url: /vinodjangid07/good-donkey-28
+            - generic [ref=e107]:
+              - generic [ref=e108] [cursor=pointer]
+              - link "Link to post" [ref=e109] [cursor=pointer]:
+                - /url: /vinodjangid07/good-donkey-28
+          - generic [ref=e110]:
+            - link "vinodjangid07" [ref=e112] [cursor=pointer]:
+              - /url: /profile/vinodjangid07
+            - button [ref=e116] [cursor=pointer]
+        - article [ref=e119]:
+          - generic [ref=e120]:
+            - link "Get code" [ref=e122] [cursor=pointer]:
+              - /url: /JkHuger/new-deer-97
+            - generic [ref=e125]:
+              - generic [ref=e126] [cursor=pointer]
+              - link "Link to post" [ref=e127] [cursor=pointer]:
+                - /url: /JkHuger/new-deer-97
+          - generic [ref=e128]:
+            - link "JkHuger" [ref=e130] [cursor=pointer]:
+              - /url: /profile/JkHuger
+            - button [ref=e134] [cursor=pointer]
+        - article [ref=e137]:
+          - generic [ref=e138]:
+            - link "Get code" [ref=e140] [cursor=pointer]:
+              - /url: /Gaurav-WebDev/tall-mayfly-60
+            - generic [ref=e143]:
+              - generic [ref=e144] [cursor=pointer]
+              - link "Link to post" [ref=e145] [cursor=pointer]:
+                - /url: /Gaurav-WebDev/tall-mayfly-60
+          - generic [ref=e146]:
+            - link "Gaurav-WebDev" [ref=e148] [cursor=pointer]:
+              - /url: /profile/Gaurav-WebDev
+            - button [ref=e152] [cursor=pointer]
+        - article [ref=e155]:
+          - generic [ref=e156]:
+            - link "Get code" [ref=e158] [cursor=pointer]:
+              - /url: /mobinkakei/strong-lizard-79
+            - generic [ref=e161]:
+              - generic [ref=e162] [cursor=pointer]
+              - link "Link to post" [ref=e163] [cursor=pointer]:
+                - /url: /mobinkakei/strong-lizard-79
+          - generic [ref=e164]:
+            - link "mobinkakei" [ref=e166] [cursor=pointer]:
+              - /url: /profile/mobinkakei
+            - button [ref=e170] [cursor=pointer]
+        - article [ref=e173]:
+          - generic [ref=e174]:
+            - link "Get code" [ref=e176] [cursor=pointer]:
+              - /url: /barisdogansutcu/rare-owl-43
+            - generic [ref=e179]:
+              - generic [ref=e180] [cursor=pointer]
+              - link "Link to post" [ref=e181] [cursor=pointer]:
+                - /url: /barisdogansutcu/rare-owl-43
+          - generic [ref=e182]:
+            - link "barisdogansutcu" [ref=e184] [cursor=pointer]:
+              - /url: /profile/barisdogansutcu
+            - button [ref=e188] [cursor=pointer]
+        - article [ref=e191]:
+          - generic [ref=e192]:
+            - link "Get code" [ref=e194] [cursor=pointer]:
+              - /url: /aadium/soft-panda-93
+            - generic [ref=e197]:
+              - generic [ref=e198] [cursor=pointer]
+              - link "Link to post" [ref=e199] [cursor=pointer]:
+                - /url: /aadium/soft-panda-93
+          - generic [ref=e200]:
+            - link "aadium" [ref=e202] [cursor=pointer]:
+              - /url: /profile/aadium
+            - button [ref=e206] [cursor=pointer]
+        - article [ref=e209]:
+          - generic [ref=e210]:
+            - link "Get code" [ref=e212] [cursor=pointer]:
+              - /url: /cssbuttons-io/weak-firefox-5
+            - generic [ref=e215]:
+              - generic [ref=e216] [cursor=pointer]
+              - link "Link to post" [ref=e217] [cursor=pointer]:
+                - /url: /cssbuttons-io/weak-firefox-5
+          - generic [ref=e218]:
+            - link "cssbuttons-io" [ref=e220] [cursor=pointer]:
+              - /url: /profile/cssbuttons-io
+            - button [ref=e224] [cursor=pointer]
+        - article [ref=e227]:
+          - generic [ref=e228]:
+            - link "Get code" [ref=e230] [cursor=pointer]:
+              - /url: /elijahgummer/unlucky-rattlesnake-65
+            - generic [ref=e233]:
+              - generic [ref=e234] [cursor=pointer]
+              - link "Link to post" [ref=e235] [cursor=pointer]:
+                - /url: /elijahgummer/unlucky-rattlesnake-65
+          - generic [ref=e236]:
+            - link "elijahgummer" [ref=e238] [cursor=pointer]:
+              - /url: /profile/elijahgummer
+            - button [ref=e246] [cursor=pointer]
+        - article [ref=e249]:
+          - generic [ref=e250]:
+            - link "Get code" [ref=e252] [cursor=pointer]:
+              - /url: /mrhyddenn/silly-starfish-53
+            - generic [ref=e255]:
+              - generic [ref=e256] [cursor=pointer]
+              - link "Link to post" [ref=e257] [cursor=pointer]:
+                - /url: /mrhyddenn/silly-starfish-53
+          - generic [ref=e258]:
+            - link "mrhyddenn" [ref=e260] [cursor=pointer]:
+              - /url: /profile/mrhyddenn
+            - button [ref=e264] [cursor=pointer]
+        - generic [ref=e268]:
+          - generic [ref=e269]:
+            - link [ref=e270] [cursor=pointer]:
+              - /url: https://uiverse.io/design
+              - img "Designer-grade UI without hiring a designer." [ref=e271]
+            - generic [ref=e272]:
+              - img "Uiverse Design" [ref=e274]
+              - paragraph [ref=e275]: Designer-grade UI without hiring a designer.
+              - paragraph [ref=e276]: Get polished palettes, typography, components, and usage rules in one pack. Drop it into your app and look designed from day one.
+              - link "Get started" [ref=e277] [cursor=pointer]:
+                - /url: https://uiverse.io/design
+          - link "Uiverse Design Ad" [ref=e280] [cursor=pointer]:
+            - /url: https://uiverse.io/design
+            - text: Uiverse Design
+            - generic [ref=e281]: Ad
+        - article [ref=e282]:
+          - generic [ref=e283]:
+            - link "Get code" [ref=e285] [cursor=pointer]:
+              - /url: /Galahhad/mighty-warthog-42
+            - generic [ref=e288]:
+              - generic [ref=e289] [cursor=pointer]
+              - link "Link to post" [ref=e290] [cursor=pointer]:
+                - /url: /Galahhad/mighty-warthog-42
+          - generic [ref=e291]:
+            - link "Galahhad" [ref=e293] [cursor=pointer]:
+              - /url: /profile/Galahhad
+            - button [ref=e297] [cursor=pointer]
+        - article [ref=e300]:
+          - generic [ref=e301]:
+            - link "Get code" [ref=e303] [cursor=pointer]:
+              - /url: /gagan-gv/wonderful-monkey-77
+            - generic [ref=e306]:
+              - generic [ref=e307] [cursor=pointer]
+              - link "Link to post" [ref=e308] [cursor=pointer]:
+                - /url: /gagan-gv/wonderful-monkey-77
+          - generic [ref=e309]:
+            - link "gagan-gv" [ref=e311] [cursor=pointer]:
+              - /url: /profile/gagan-gv
+            - button [ref=e315] [cursor=pointer]
+        - article [ref=e318]:
+          - generic [ref=e319]:
+            - link "Get code" [ref=e321] [cursor=pointer]:
+              - /url: /Vosoone/smooth-penguin-53
+            - generic [ref=e324]:
+              - generic [ref=e325] [cursor=pointer]
+              - link "Link to post" [ref=e326] [cursor=pointer]:
+                - /url: /Vosoone/smooth-penguin-53
+          - generic [ref=e327]:
+            - link "Vosoone" [ref=e329] [cursor=pointer]:
+              - /url: /profile/Vosoone
+            - button [ref=e333] [cursor=pointer]
+        - article [ref=e336]:
+          - generic [ref=e337]:
+            - link "Get code" [ref=e339] [cursor=pointer]:
+              - /url: /bbaginuk/quiet-lionfish-18
+            - generic [ref=e342]:
+              - generic [ref=e343] [cursor=pointer]
+              - link "Link to post" [ref=e344] [cursor=pointer]:
+                - /url: /bbaginuk/quiet-lionfish-18
+          - generic [ref=e345]:
+            - link "bbaginuk" [ref=e347] [cursor=pointer]:
+              - /url: /profile/bbaginuk
+            - button [ref=e351] [cursor=pointer]
+        - article [ref=e354]:
+          - generic [ref=e355]:
+            - link "Get code" [ref=e357] [cursor=pointer]:
+              - /url: /xbeat_5120/mean-grasshopper-67
+            - generic [ref=e360]:
+              - generic [ref=e361] [cursor=pointer]
+              - link "Link to post" [ref=e362] [cursor=pointer]:
+                - /url: /xbeat_5120/mean-grasshopper-67
+          - generic [ref=e363]:
+            - link "xbeat_5120" [ref=e365] [cursor=pointer]:
+              - /url: /profile/xbeat_5120
+            - button [ref=e369] [cursor=pointer]
+        - article [ref=e372]:
+          - generic [ref=e373]:
+            - link "Get code" [ref=e375] [cursor=pointer]:
+              - /url: /mymiamo/yellow-rattlesnake-26
+            - generic [ref=e378]:
+              - generic [ref=e379] [cursor=pointer]
+              - link "Link to post" [ref=e380] [cursor=pointer]:
+                - /url: /mymiamo/yellow-rattlesnake-26
+          - generic [ref=e381]:
+            - link "mymiamo" [ref=e383] [cursor=pointer]:
+              - /url: /profile/mymiamo
+            - button [ref=e387] [cursor=pointer]
+        - article [ref=e390]:
+          - generic [ref=e391]:
+            - link "Get code" [ref=e393] [cursor=pointer]:
+              - /url: /Yaya12085/mean-vampirebat-50
+            - generic [ref=e396]:
+              - generic [ref=e397] [cursor=pointer]
+              - link "Link to post" [ref=e398] [cursor=pointer]:
+                - /url: /Yaya12085/mean-vampirebat-50
+          - generic [ref=e399]:
+            - link "Yaya12085" [ref=e401] [cursor=pointer]:
+              - /url: /profile/Yaya12085
+            - button [ref=e405] [cursor=pointer]
+        - article [ref=e408]:
+          - generic [ref=e409]:
+            - link "Get code" [ref=e411] [cursor=pointer]:
+              - /url: /reglobby/evil-snail-36
+            - generic [ref=e414]:
+              - generic [ref=e415] [cursor=pointer]
+              - link "Link to post" [ref=e416] [cursor=pointer]:
+                - /url: /reglobby/evil-snail-36
+          - generic [ref=e417]:
+            - link "reglobby" [ref=e419] [cursor=pointer]:
+              - /url: /profile/reglobby
+            - button [ref=e423] [cursor=pointer]
+        - article [ref=e426]:
+          - generic [ref=e427]:
+            - link "Get code" [ref=e429] [cursor=pointer]:
+              - /url: /dexter-st/young-newt-20
+            - generic [ref=e432]:
+              - generic [ref=e433] [cursor=pointer]
+              - link "Link to post" [ref=e434] [cursor=pointer]:
+                - /url: /dexter-st/young-newt-20
+          - generic [ref=e435]:
+            - link "dexter-st" [ref=e437] [cursor=pointer]:
+              - /url: /profile/dexter-st
+            - button [ref=e441] [cursor=pointer]
+        - article [ref=e444]:
+          - generic [ref=e445]:
+            - link "Get code" [ref=e447] [cursor=pointer]:
+              - /url: /anand_4957/little-ladybug-46
+            - generic [ref=e450]:
+              - generic [ref=e451] [cursor=pointer]
+              - link "Link to post" [ref=e452] [cursor=pointer]:
+                - /url: /anand_4957/little-ladybug-46
+          - generic [ref=e453]:
+            - link "anand_4957" [ref=e455] [cursor=pointer]:
+              - /url: /profile/anand_4957
+            - button [ref=e459] [cursor=pointer]
+        - article [ref=e462]:
+          - generic [ref=e463]:
+            - link "Get code" [ref=e465] [cursor=pointer]:
+              - /url: /Spacious74/lazy-dragonfly-64
+            - generic [ref=e468]:
+              - generic [ref=e469] [cursor=pointer]
+              - link "Link to post" [ref=e470] [cursor=pointer]:
+                - /url: /Spacious74/lazy-dragonfly-64
+          - generic [ref=e471]:
+            - link "Spacious74" [ref=e473] [cursor=pointer]:
+              - /url: /profile/Spacious74
+            - button [ref=e477] [cursor=pointer]
+        - article [ref=e480]:
+          - generic [ref=e481]:
+            - link "Get code" [ref=e483] [cursor=pointer]:
+              - /url: /adamgiebl/hot-cat-14
+            - generic [ref=e486]:
+              - generic [ref=e487] [cursor=pointer]
+              - link "Link to post" [ref=e488] [cursor=pointer]:
+                - /url: /adamgiebl/hot-cat-14
+          - generic [ref=e489]:
+            - link "adamgiebl" [ref=e491] [cursor=pointer]:
+              - /url: /profile/adamgiebl
+            - button [ref=e495] [cursor=pointer]
+        - article [ref=e498]:
+          - generic [ref=e499]:
+            - link "Get code" [ref=e501] [cursor=pointer]:
+              - /url: /gagan-gv/soft-dolphin-57
+            - generic [ref=e504]:
+              - generic [ref=e505] [cursor=pointer]
+              - link "Link to post" [ref=e506] [cursor=pointer]:
+                - /url: /gagan-gv/soft-dolphin-57
+          - generic [ref=e507]:
+            - link "gagan-gv" [ref=e509] [cursor=pointer]:
+              - /url: /profile/gagan-gv
+            - button [ref=e513] [cursor=pointer]
+        - article [ref=e516]:
+          - generic [ref=e517]:
+            - link "Get code" [ref=e519] [cursor=pointer]:
+              - /url: /Nawsome/tiny-chipmunk-51
+            - generic [ref=e522]:
+              - generic [ref=e523] [cursor=pointer]
+              - link "Link to post" [ref=e524] [cursor=pointer]:
+                - /url: /Nawsome/tiny-chipmunk-51
+          - generic [ref=e525]:
+            - link "Nawsome" [ref=e527] [cursor=pointer]:
+              - /url: /profile/Nawsome
+            - button [ref=e531] [cursor=pointer]
+        - article [ref=e534]:
+          - generic [ref=e535]:
+            - link "Get code" [ref=e537] [cursor=pointer]:
+              - /url: /satyamchaudharydev/tasty-dingo-5
+            - generic [ref=e540]:
+              - generic [ref=e541] [cursor=pointer]
+              - link "Link to post" [ref=e542] [cursor=pointer]:
+                - /url: /satyamchaudharydev/tasty-dingo-5
+          - generic [ref=e543]:
+            - link "satyamchaudharydev" [ref=e545] [cursor=pointer]:
+              - /url: /profile/satyamchaudharydev
+            - button [ref=e549] [cursor=pointer]
+        - article [ref=e552]:
+          - generic [ref=e553]:
+            - link "Get code" [ref=e555] [cursor=pointer]:
+              - /url: /adamgiebl/big-ape-36
+            - generic [ref=e558]:
+              - generic [ref=e559] [cursor=pointer]
+              - link "Link to post" [ref=e560] [cursor=pointer]:
+                - /url: /adamgiebl/big-ape-36
+          - generic [ref=e561]:
+            - link "adamgiebl" [ref=e563] [cursor=pointer]:
+              - /url: /profile/adamgiebl
+            - button [ref=e567] [cursor=pointer]
+        - article [ref=e570]:
+          - generic [ref=e571]:
+            - link "Get code" [ref=e573] [cursor=pointer]:
+              - /url: /TaniaDou/witty-rabbit-59
+            - generic [ref=e576]:
+              - generic [ref=e577] [cursor=pointer]
+              - link "Link to post" [ref=e578] [cursor=pointer]:
+                - /url: /TaniaDou/witty-rabbit-59
+          - generic [ref=e579]:
+            - link "TaniaDou" [ref=e581] [cursor=pointer]:
+              - /url: /profile/TaniaDou
+            - button [ref=e585] [cursor=pointer]
+        - article [ref=e588]:
+          - generic [ref=e589]:
+            - link "Get code" [ref=e591] [cursor=pointer]:
+              - /url: /Yaya12085/lovely-firefox-94
+            - generic [ref=e594]:
+              - generic [ref=e595] [cursor=pointer]
+              - link "Link to post" [ref=e596] [cursor=pointer]:
+                - /url: /Yaya12085/lovely-firefox-94
+          - generic [ref=e597]:
+            - link "Yaya12085" [ref=e599] [cursor=pointer]:
+              - /url: /profile/Yaya12085
+            - button [ref=e603] [cursor=pointer]
+        - article [ref=e606]:
+          - generic [ref=e607]:
+            - link "Get code" [ref=e609] [cursor=pointer]:
+              - /url: /bandirevanth/wonderful-dog-56
+            - generic [ref=e612]:
+              - generic [ref=e613] [cursor=pointer]
+              - link "Link to post" [ref=e614] [cursor=pointer]:
+                - /url: /bandirevanth/wonderful-dog-56
+          - generic [ref=e615]:
+            - link "bandirevanth" [ref=e617] [cursor=pointer]:
+              - /url: /profile/bandirevanth
+            - button [ref=e621] [cursor=pointer]
+        - article [ref=e624]:
+          - generic [ref=e625]:
+            - link "Get code" [ref=e627] [cursor=pointer]:
+              - /url: /augustin_4687/modern-husky-6
+            - generic [ref=e630]:
+              - generic [ref=e631] [cursor=pointer]
+              - link "Link to post" [ref=e632] [cursor=pointer]:
+                - /url: /augustin_4687/modern-husky-6
+          - generic [ref=e633]:
+            - link "augustin_4687" [ref=e635] [cursor=pointer]:
+              - /url: /profile/augustin_4687
+            - button [ref=e639] [cursor=pointer]
+        - article [ref=e642]:
+          - generic [ref=e643]:
+            - link "Get code" [ref=e645] [cursor=pointer]:
+              - /url: /PriyanshuGupta28/silent-rabbit-98
+            - generic [ref=e648]:
+              - generic [ref=e649] [cursor=pointer]
+              - link "Link to post" [ref=e650] [cursor=pointer]:
+                - /url: /PriyanshuGupta28/silent-rabbit-98
+          - generic [ref=e651]:
+            - link "PriyanshuGupta28" [ref=e653] [cursor=pointer]:
+              - /url: /profile/PriyanshuGupta28
+            - button [ref=e657] [cursor=pointer]
+        - article [ref=e660]:
+          - generic [ref=e661]:
+            - link "Get code" [ref=e663] [cursor=pointer]:
+              - /url: /Smit-Prajapati/spicy-rat-83
+            - generic [ref=e666]:
+              - generic [ref=e667] [cursor=pointer]
+              - link "Link to post" [ref=e668] [cursor=pointer]:
+                - /url: /Smit-Prajapati/spicy-rat-83
+          - generic [ref=e669]:
+            - link "Smit-Prajapati" [ref=e671] [cursor=pointer]:
+              - /url: /profile/Smit-Prajapati
+            - button [ref=e675] [cursor=pointer]
+        - article [ref=e678]:
+          - generic [ref=e679]:
+            - link "Get code" [ref=e681] [cursor=pointer]:
+              - /url: /LilaRest/quick-dragonfly-7
+            - generic [ref=e684]:
+              - generic [ref=e685] [cursor=pointer]
+              - link "Link to post" [ref=e686] [cursor=pointer]:
+                - /url: /LilaRest/quick-dragonfly-7
+          - generic [ref=e687]:
+            - link "LilaRest" [ref=e689] [cursor=pointer]:
+              - /url: /profile/LilaRest
+            - button [ref=e693] [cursor=pointer]
+        - generic [ref=e696]: Ad
+        - button "Next page" [ref=e701] [cursor=pointer]
+    - contentinfo "Site Footer" [ref=e704]:
+      - generic [ref=e705]:
+        - generic [ref=e706]:
+          - generic [ref=e707]:
+            - paragraph [ref=e709]: Uiverse | The universe of UI
+            - generic [ref=e710]:
+              - paragraph [ref=e711]: MIT License
+              - paragraph [ref=e714]:
+                - text: All content (UI elements) on this site are published under the
+                - link "MIT License" [ref=e715] [cursor=pointer]:
+                  - /url: https://opensource.org/license/mit
+                - text: .
+            - list [ref=e716]:
+              - listitem [ref=e717]:
+                - link "Instagram" [ref=e718] [cursor=pointer]:
+                  - /url: https://www.instagram.com/uiverse.io/
+              - listitem [ref=e722]:
+                - link "Twitter" [ref=e723] [cursor=pointer]:
+                  - /url: https://twitter.com/uiverse_io
+              - listitem [ref=e727]:
+                - link "Discord" [ref=e728] [cursor=pointer]:
+                  - /url: https://discord.gg/KD8ba2uUpT
+          - generic [ref=e732]:
+            - generic [ref=e733]:
+              - paragraph [ref=e734]: Tools
+              - navigation "Footer Navigation - Tools" [ref=e735]:
+                - list [ref=e736]:
+                  - listitem [ref=e737]:
+                    - link "SuperSample.dev" [ref=e738] [cursor=pointer]:
+                      - /url: https://supersample.dev/
+            - generic [ref=e739]:
+              - paragraph [ref=e740]: Resources
+              - navigation "Footer Navigation - Legal" [ref=e741]:
+                - list [ref=e742]:
+                  - listitem [ref=e743]:
+                    - link "Design Systems" [ref=e744] [cursor=pointer]:
+                      - /url: https://uiverse.io/design
+                  - listitem [ref=e745]:
+                    - link "Cssbuttons.io" [ref=e746] [cursor=pointer]:
+                      - /url: https://cssbuttons.io
+                  - listitem [ref=e747]:
+                    - link "Neumorphism.io" [ref=e748] [cursor=pointer]:
+                      - /url: https://neumorphism.io
+                  - listitem [ref=e749]:
+                    - link "Browsergames.gg" [ref=e750] [cursor=pointer]:
+                      - /url: https://browsergames.gg
+            - generic [ref=e751]:
+              - paragraph [ref=e752]: Information
+              - navigation "Footer Navigation - Legal" [ref=e753]:
+                - list [ref=e754]:
+                  - listitem [ref=e755]:
+                    - link "Blog" [ref=e756] [cursor=pointer]:
+                      - /url: /blog
+                  - listitem [ref=e757]:
+                    - link "Post Guidelines" [ref=e758] [cursor=pointer]:
+                      - /url: /guidelines
+                  - listitem [ref=e759]:
+                    - link "Give feedback" [ref=e760] [cursor=pointer]:
+                      - /url: /feedback
+                  - listitem [ref=e761]:
+                    - link "Report bug" [ref=e762] [cursor=pointer]:
+                      - /url: /bug
+            - generic [ref=e763]:
+              - paragraph [ref=e764]: Legal
+              - navigation "Footer Navigation - Company" [ref=e765]:
+                - list [ref=e766]:
+                  - listitem [ref=e767]:
+                    - link "Terms and Conditions" [ref=e768] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/terms-of-service/bdc0e7cf-cb88-4f24-9cb5-13761e20dedb
+                  - listitem [ref=e769]:
+                    - link "Privacy policy" [ref=e770] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/privacy-policy/fe317b39-7972-4f85-b7c6-d4f562e429d4
+                  - listitem [ref=e771]:
+                    - link "Cookie policy" [ref=e772] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/cookie-policy/4e4bbc89-b80d-43d6-98bc-02ee075cc311
+                  - listitem [ref=e773]:
+                    - link "Disclaimer" [ref=e774] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/disclaimer/eabc96f8-640d-4858-aadc-c30f646265ed
+        - paragraph [ref=e775]: 2026 Pixel Galaxies. All rights reserved. - Uiverse.io

@@ -1,0 +1,95 @@
+- generic [ref=f5e4]:
+  - banner [ref=f5e7]:
+    - generic [ref=f5e8]:
+      - link [ref=f5e9] [cursor=pointer]:
+        - /url: /about
+        - paragraph [ref=f5e14]: Chattero
+      - button "Features" [ref=f5e16]
+      - generic [ref=f5e17]:
+        - button "Toggle color scheme" [ref=f5e18]
+        - link "Log in" [ref=f5e22]:
+          - /url: /auth
+  - generic [ref=f5e26]:
+    - generic [ref=f5e27]:
+      - generic [ref=f5e28]: Private messaging, made simple
+      - heading "Chattero is messaging, minus the noise." [level=1] [ref=f5e36]:
+        - generic [ref=f5e37]: Chattero
+        - generic [ref=f5e39]: is
+        - generic [ref=f5e41]: messaging,
+        - generic [ref=f5e43]: minus
+        - generic [ref=f5e45]: the
+        - generic [ref=f5e47]: noise.
+      - paragraph [ref=f5e49]: No feeds, no read-receipt theatrics, no ads. Just fast, private, one-on-one conversations with the people who matter.
+      - generic [ref=f5e50]:
+        - link "Get started free" [ref=f5e52]:
+          - /url: /auth
+        - button "See how it works" [ref=f5e59]
+      - paragraph [ref=f5e62]: ⚡ No setup headaches — just sign up and talk.
+    - generic [ref=f5e63]:
+      - paragraph [ref=f5e71]: Scoped to 2 people
+      - paragraph [ref=f5e79]: Instant delivery
+      - generic [ref=f5e81]:
+        - generic [ref=f5e83]:
+          - paragraph [ref=f5e85]: AM
+          - generic [ref=f5e86]:
+            - paragraph [ref=f5e87]: Alex Morgan
+            - paragraph [ref=f5e90]: Online
+        - paragraph [ref=f5e101]: AM
+  - paragraph [ref=f5e109]: Because the best conversations happen without an audience. Chattero keeps every chat private, simple, and just between the two of you.
+  - generic [ref=f5e111]:
+    - paragraph [ref=f5e117]: Instant delivery
+    - paragraph [ref=f5e123]: JWT-secured
+    - paragraph [ref=f5e132]: One-on-one, always
+    - paragraph [ref=f5e140]: Dark mode included
+    - paragraph [ref=f5e148]: Zero clutter
+    - paragraph [ref=f5e154]: Works on any device
+    - paragraph [ref=f5e160]: Instant delivery
+    - paragraph [ref=f5e166]: JWT-secured
+    - paragraph [ref=f5e175]: One-on-one, always
+    - paragraph [ref=f5e183]: Dark mode included
+    - paragraph [ref=f5e191]: Zero clutter
+    - paragraph [ref=f5e197]: Works on any device
+  - generic [ref=f5e198]:
+    - generic [ref=f5e199]:
+      - generic [ref=f5e200]: Why Chattero
+      - heading "Built to get out of your way" [level=2] [ref=f5e202]
+      - paragraph [ref=f5e203]: Every feature exists to make one conversation feel effortless — nothing more, nothing less.
+    - generic [ref=f5e204]:
+      - generic [ref=f5e211]:
+        - heading "Real-time feel" [level=3] [ref=f5e212]
+        - paragraph [ref=f5e213]: Messages land the moment you hit send — no refresh, no spinner, no waiting around. Conversations should flow, not load.
+      - generic [ref=f5e220]:
+        - heading "Secure by default" [level=3] [ref=f5e221]
+        - paragraph [ref=f5e222]: Every chat is scoped to exactly two people and backed by JWT-based auth under the hood, so there's no guessing who can read what.
+      - generic [ref=f5e231]:
+        - heading "Simple & fast" [level=3] [ref=f5e232]
+        - paragraph [ref=f5e233]: No algorithmic feed, no read-receipt theatrics. Just you and the person you are talking to.
+      - generic [ref=f5e242]:
+        - heading "Easy on the eyes" [level=3] [ref=f5e243]
+        - paragraph [ref=f5e244]: Full dark mode support that follows your system, so late-night chats stay comfortable.
+  - generic [ref=f5e245]:
+    - generic [ref=f5e246]:
+      - generic [ref=f5e247]: How it works
+      - heading "From sign up to first message in under a minute" [level=2] [ref=f5e249]
+    - generic [ref=f5e250]:
+      - generic [ref=f5e252]:
+        - paragraph [ref=f5e253]: "01"
+        - heading "Create your account" [level=3] [ref=f5e258]
+        - paragraph [ref=f5e259]: Sign up in seconds — just an email and a password. No forms, no fuss.
+      - generic [ref=f5e261]:
+        - paragraph [ref=f5e262]: "02"
+        - heading "Find someone to talk to" [level=3] [ref=f5e267]
+        - paragraph [ref=f5e268]: Search the people you already know and open a conversation instantly.
+      - generic [ref=f5e270]:
+        - paragraph [ref=f5e271]: "03"
+        - heading "Just start chatting" [level=3] [ref=f5e275]
+        - paragraph [ref=f5e276]: No noise, no feed, no distractions — only the conversation that matters.
+  - generic [ref=f5e279]:
+    - heading "Ready to start chatting?" [level=2] [ref=f5e280]
+    - paragraph [ref=f5e281]: Create a free account and send your first message in less than a minute.
+    - link "Create free account" [ref=f5e283]:
+      - /url: /auth
+  - generic [ref=f5e291]:
+    - paragraph [ref=f5e296]: Chattero
+    - paragraph [ref=f5e297]: Built with Rails & React
+  - button "Back to Top" [ref=f5e298] [cursor=pointer]

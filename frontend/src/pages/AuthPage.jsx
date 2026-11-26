@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import {
   Alert,
   Anchor,
+  Box,
   Button,
   Center,
   Group,
@@ -14,15 +16,22 @@ import {
   ThemeIcon,
   Title,
 } from '@mantine/core'
-import { IconAlertCircle, IconMessageCircle2 } from '@tabler/icons-react'
+import { IconAlertCircleFilled, IconBrandGithub, IconMessageCircle2Filled } from '@tabler/icons-react'
+import NewtonsCradleLoader from '../components/NewtonsCradleLoader.jsx'
+import PublicNavbar from '../components/PublicNavbar.jsx'
+import AuroraBackground from '../components/AuroraBackground.jsx'
+import { heroGradient } from '../theme.js'
+import { textGradient } from '../utils/textGradient.js'
 
 function AuthPage() {
+  const prefersReducedMotion = useReducedMotion()
   const [mode, setMode] = useState('login')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [error, setError] = useState(null) // null = no error to show
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const handleLogin = (e) => {
       e.preventDefault()
       console.log(`Hello ${email}!`)
@@ -32,6 +41,7 @@ function AuthPage() {
   const handleSingup = async (e) => {
     e.preventDefault()
     setError(null) // clear the previous error before a new attempt
+    setIsSubmitting(true)
 
     try {
       const response = await fetch('http://localhost:3000/api/v1/signup', {
@@ -63,99 +73,154 @@ function AuthPage() {
     } catch {
       // Rails couldn't be reached at all
       setError('Could not reach the server. Is Rails running?')
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
-
-
   return (
-    <Center
+    <div
       style={{
+        background: heroGradient,
         minHeight: '100svh',
-        background: 'linear-gradient(160deg, #e6fbf5 0%, #eef3ff 100%)',
+        position: 'relative',
       }}
     >
-      <Paper withBorder shadow="md" radius="lg" p="xl" w={400}>
-        <Group justify="center" mb="lg" gap="xs">
-          <ThemeIcon size={36} radius="md" color="teal">
-            <IconMessageCircle2 size={20} />
-          </ThemeIcon>
-          <Title order={2} fw={600}>
-            Chatter
-          </Title>
-        </Group>
+      <AuroraBackground />
+      <PublicNavbar showLoginButton={false} />
+      <Center style={{ minHeight: 'calc(100svh - 84px)', position: 'relative' }}>
+        <motion.div
+          initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 32 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+        >
+          <Stack align="center" gap="md">
+            <Paper withBorder shadow="md" radius="lg" p="xl" w={400} style={{ overflow: 'hidden' }}>
+              <Box
+                style={{
+                  height: 4,
+                  margin: '-1.5rem -1.5rem 1.5rem',
+                  background: 'linear-gradient(90deg, var(--mantine-color-teal-6), var(--mantine-color-blue-6))',
+                }}
+              />
+              <Group justify="center" mb="lg" gap="xs">
+                <ThemeIcon size={36} radius="xl" variant="gradient" gradient={{ from: 'teal', to: 'blue', deg: 45 }}>
+                  <IconMessageCircle2Filled size={20} />
+                </ThemeIcon>
+                <Title order={2} fw={700} style={textGradient('teal', 'blue', 45)}>
+                  Chattero
+                </Title>
+              </Group>
 
-        {error && (
-          <Alert
-            variant="light"
-            color="red"
-            title="Something went wrong"
-            icon={<IconAlertCircle size={18} />}
-            withCloseButton
-            onClose={() => setError(null)}
-            mb="md"
-          >
-            {error}
-          </Alert>
-        )}
+              {error && (
+                <Alert
+                  variant="light"
+                  color="red"
+                  title="Something went wrong"
+                  icon={<IconAlertCircleFilled size={18} />}
+                  withCloseButton
+                  onClose={() => setError(null)}
+                  mb="md"
+                >
+                  {error}
+                </Alert>
+              )}
 
-        <Tabs value={mode} onChange={setMode} radius="md">
-          <Tabs.List grow mb="lg">
-            <Tabs.Tab value="login">Log in</Tabs.Tab>
-            <Tabs.Tab value="signup">Sign up</Tabs.Tab>
-          </Tabs.List>
+              <Tabs value={mode} onChange={setMode} radius="md">
+                <Tabs.List grow mb="lg">
+                  <Tabs.Tab value="login">Log in</Tabs.Tab>
+                  <Tabs.Tab value="signup">Sign up</Tabs.Tab>
+                </Tabs.List>
+              </Tabs>
 
-          <Tabs.Panel value="login">
-            <form onSubmit={handleLogin}>
-              <Stack gap="md">
-                <TextInput label="Email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="you@example.com" />
-                <PasswordInput label="Password" onChange={(e) => setPassword(e.target.value)} value={password} placeholder="••••••••" />
-                <Anchor size="sm" ta="right">
-                  Forgot password?
-                </Anchor>
-                <Button type="submit" fullWidth color="teal" radius="md">
-                  Log in
-                </Button>
-              </Stack>
-            </form>
-          </Tabs.Panel>
+              <motion.div layout transition={{ duration: 0.2, ease: 'easeInOut' }}>
+                <AnimatePresence mode="wait" initial={false}>
+                  {mode === 'login' ? (
+                    <motion.form
+                      key="login"
+                      onSubmit={handleLogin}
+                      initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, x: -12 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, x: 12 }}
+                      transition={{ duration: 0.2, ease: 'easeOut' }}
+                    >
+                      <Stack gap="md">
+                        <TextInput label="Email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="you@example.com" />
+                        <PasswordInput label="Password" onChange={(e) => setPassword(e.target.value)} value={password} placeholder="••••••••" />
+                        <Button
+                          type="submit"
+                          fullWidth
+                          radius="md"
+                          variant="gradient"
+                          gradient={{ from: 'teal', to: 'blue', deg: 60 }}
+                        >
+                          Log in
+                        </Button>
+                      </Stack>
+                    </motion.form>
+                  ) : (
+                    <motion.form
+                      key="signup"
+                      onSubmit={handleSingup}
+                      initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, x: 12 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, x: -12 }}
+                      transition={{ duration: 0.2, ease: 'easeOut' }}
+                    >
+                      <Stack gap="md">
+                        <Group grow>
+                          <TextInput label="First name" placeholder="Joe" onChange={(e) => setFirstName(e.target.value)} value={firstName} />
+                          <TextInput label="Last name" placeholder="Doe" onChange={(e) => setLastName(e.target.value)} value={lastName} />
+                        </Group>
+                        <TextInput label="Email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="you@example.com" />
+                        <PasswordInput label="Password" onChange={(e) => setPassword(e.target.value)} value={password} placeholder="••••••••" />
+                        <Button
+                          type="submit"
+                          fullWidth
+                          radius="md"
+                          variant="gradient"
+                          gradient={{ from: 'teal', to: 'blue', deg: 60 }}
+                          disabled={isSubmitting}
+                        >
+                          {isSubmitting ? <NewtonsCradleLoader size={24} color="white" /> : 'Create account'}
+                        </Button>
+                      </Stack>
+                    </motion.form>
+                  )}
+                </AnimatePresence>
+              </motion.div>
 
-          <Tabs.Panel value="signup">
-            <form onSubmit={handleSingup}>
-              <Stack gap="md">
-                <Group grow>
-                  <TextInput label="First name" placeholder="Joe" onChange={(e) => setFirstName(e.target.value)} value={firstName} />
-                  <TextInput label="Last name" placeholder="Doe" onChange={(e) => setLastName(e.target.value)} value={lastName} />
+              <Text ta="center" size="sm" mt="lg" c="dimmed">
+                {mode === 'login' ? (
+                  <>
+                    Don&apos;t have an account?{' '}
+                    <Anchor size="sm" onClick={() => setMode('signup')}>
+                      Sign up
+                    </Anchor>
+                  </>
+                ) : (
+                  <>
+                    Already have an account?{' '}
+                    <Anchor size="sm" onClick={() => setMode('login')}>
+                      Log in
+                    </Anchor>
+                  </>
+                )}
+              </Text>
+            </Paper>
+            <Text size="xs" c="dimmed">
+              Made by{' '}
+              <Anchor href="https://github.com/TheP4trik-tech" target="_blank" rel="noopener noreferrer" size="xs" inline>
+                <Group gap={4} component="span" align="center" style={{ display: 'inline-flex', verticalAlign: 'middle' }}>
+                  <IconBrandGithub size={14} style={{ position: 'relative', top: 1 }} />
+                  TheP4trik-tech
                 </Group>
-                <TextInput label="Email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="you@example.com" />
-                <PasswordInput label="Password" onChange={(e) => setPassword(e.target.value)} value={password} placeholder="••••••••" />
-                <Button type="submit" fullWidth color="teal" radius="md">
-                  Create account
-                </Button>
-              </Stack>
-            </form>
-          </Tabs.Panel>
-        </Tabs>
-
-        <Text ta="center" size="sm" mt="lg" c="dimmed">
-          {mode === 'login' ? (
-            <>
-              Don&apos;t have an account?{' '}
-              <Anchor size="sm" onClick={() => setMode('signup')}>
-                Sign up
               </Anchor>
-            </>
-          ) : (
-            <>
-              Already have an account?{' '}
-              <Anchor size="sm" onClick={() => setMode('login')}>
-                Log in
-              </Anchor>
-            </>
-          )}
-        </Text>
-      </Paper>
-    </Center>
+            </Text>
+          </Stack>
+        </motion.div>
+      </Center>
+    </div>
   )
 }
 

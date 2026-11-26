@@ -1,0 +1,66 @@
+- generic [ref=f9e3]:
+  - banner [ref=f9e6]:
+    - generic [ref=f9e7]:
+      - link [ref=f9e8] [cursor=pointer]:
+        - /url: /about
+        - paragraph [ref=f9e12]: Chattero
+      - generic [ref=f9e13]:
+        - button "Toggle color scheme" [ref=f9e14]
+        - button "Features" [ref=f9e18]
+        - link "Log in" [ref=f9e19]:
+          - /url: /auth
+  - generic [ref=f9e24]:
+    - heading "Chattero" [level=1] [ref=f9e30]
+    - paragraph [ref=f9e33]:
+      - generic [ref=f9e34]: Simple,
+      - generic [ref=f9e36]: secure,
+      - generic [ref=f9e38]: one-on-one
+      - generic [ref=f9e40]: messaging
+      - generic [ref=f9e42]: —
+      - generic [ref=f9e44]: "no"
+      - generic [ref=f9e46]: noise,
+      - generic [ref=f9e48]: just
+      - generic [ref=f9e50]: conversations
+      - generic [ref=f9e52]: that
+      - generic [ref=f9e54]: matter.
+    - generic [ref=f9e56]:
+      - link "Get started free" [ref=f9e58]:
+        - /url: /auth
+      - button "See how it works" [ref=f9e65]
+  - generic [ref=f9e69]:
+    - generic [ref=f9e72]:
+      - paragraph [ref=f9e74]: JD
+      - paragraph [ref=f9e75]: See you at 8?
+      - paragraph [ref=f9e76]: 14:02
+    - generic [ref=f9e79]:
+      - paragraph [ref=f9e81]: AM
+      - paragraph [ref=f9e82]: On my way 🚀
+      - paragraph [ref=f9e83]: 14:05
+    - generic [ref=f9e86]:
+      - paragraph [ref=f9e88]: SK
+      - paragraph [ref=f9e89]: lol same
+      - paragraph [ref=f9e90]: 14:11
+    - generic [ref=f9e93]:
+      - paragraph [ref=f9e95]: RT
+      - paragraph [ref=f9e96]: Can't wait!
+      - paragraph [ref=f9e97]: 14:20
+    - paragraph [ref=f9e99]: Because the best conversations happen without an audience. Chattero keeps every chat private, simple, and just between the two of you.
+  - generic [ref=f9e101]:
+    - generic [ref=f9e104]:
+      - generic [ref=f9e105]: Speed
+      - generic [ref=f9e112]:
+        - paragraph [ref=f9e117]: Chattero team@chattero.app
+        - heading "Real-time feel" [level=2] [ref=f9e118]
+        - paragraph [ref=f9e119]: Messages land the moment you hit send — no refresh, no spinner, no waiting around. Conversations should flow, not load.
+    - generic [ref=f9e122]:
+      - generic [ref=f9e123]: Security
+      - generic [ref=f9e130]:
+        - paragraph [ref=f9e135]: Chattero team@chattero.app
+        - heading "Secure by default" [level=2] [ref=f9e136]
+        - paragraph [ref=f9e137]: Every chat is scoped to exactly two people. We use JWT-based auth under the hood, so there's no guessing who can read what.
+    - generic [ref=f9e140]:
+      - generic [ref=f9e141]: Simplicity
+      - generic [ref=f9e148]:
+        - paragraph [ref=f9e155]: Chattero team@chattero.app
+        - heading "Simple & fast" [level=2] [ref=f9e156]
+        - paragraph [ref=f9e157]: No read-receipt theatrics, no algorithmic feed, no noise. Just you and the person you're talking to — we kept everything else out of the way.

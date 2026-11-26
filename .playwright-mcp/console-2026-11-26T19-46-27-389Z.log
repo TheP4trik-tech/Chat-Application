@@ -1,0 +1,52 @@
+[      49ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:22163
+[   58887ms] ReferenceError: useState is not defined
+    at ChatMockup (http://localhost:5173/src/pages/About.jsx?t=1795722446165:424:27)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:20257:20)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:5916:24)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:7761:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:8841:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:1131:72)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:13596:98)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:13459:43)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:13443:13)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:12859:37)
+[   58886ms] [WARNING] %s
+
+%s
+ An error occurred in the <ChatMockup> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:7239
+[   80444ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:22163
+[   80497ms] ReferenceError: useState is not defined
+    at ChatMockup (http://localhost:5173/src/pages/About.jsx?t=1795722446165:424:27)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:20257:20)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:5916:24)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:7761:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:8841:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:1131:72)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:13596:98)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:13459:43)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:13443:13)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:12859:37)
+[   80494ms] [WARNING] %s
+
+%s
+ An error occurred in the <ChatMockup> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:7239
+[   83622ms] [ERROR] Executing inline event handler violates the following Content Security Policy directive 'script-src 'nonce-ifQqHDyTgMYGjTwyZPJZ3A' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:'. Note that 'unsafe-inline' is ignored if either a hash or nonce value is present in the source list. The action has been blocked. @ https://www.google.com/search?q=localhost%3A5173)&oq=localhost%3A5173)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDrSAQgxMDc3ajBqNKgCALACAQ&sourceid=chrome&source=chrome.ob&ie=UTF-8&sei=5owIa9PDI4SP-d8PwsK_wAE:1
+[   85335ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:22163
+[   85412ms] ReferenceError: useState is not defined
+    at ChatMockup (http://localhost:5173/src/pages/About.jsx?t=1795722446165:424:27)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:20257:20)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:5916:24)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:7761:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:8841:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:1131:72)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:13596:98)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:13459:43)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:13443:13)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:12859:37)
+[   85408ms] [WARNING] %s
+
+%s
+ An error occurred in the <ChatMockup> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1cb16af4:7239

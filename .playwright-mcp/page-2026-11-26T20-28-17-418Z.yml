@@ -1,0 +1,50 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: /about
+        - paragraph [ref=e12]: Chattero
+      - generic [ref=e13]:
+        - button "Toggle color scheme" [ref=e14]
+        - link "← About" [ref=e18]:
+          - /url: /about
+  - generic [ref=e21]:
+    - generic [ref=e24]:
+      - generic [ref=e25]: Private messaging, made simple
+      - heading "Good conversations start here." [level=1] [ref=e32]: Good conversationsstart here.
+      - paragraph [ref=e33]: Sign in or create a free account to start chatting — private, fast, and refreshingly simple.
+      - generic [ref=e34]:
+        - paragraph [ref=e39]: Instant delivery
+        - paragraph [ref=e44]: JWT-secured auth
+        - paragraph [ref=e52]: One-on-one, always
+        - paragraph [ref=e59]: Dark mode included
+      - generic [ref=e62]:
+        - generic [ref=e64]:
+          - paragraph [ref=e66]: AM
+          - generic [ref=e67]:
+            - paragraph [ref=e68]: Alex Morgan
+            - paragraph [ref=e71]: Online
+        - paragraph [ref=e82]: AM
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - heading "Chattero" [level=2] [ref=e97]
+        - tablist [ref=e99]:
+          - tab "Log in" [selected] [ref=e100]
+          - tab "Sign up" [ref=e102]
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - generic [ref=e108]: Email
+            - textbox "Email" [ref=e110]:
+              - /placeholder: you@example.com
+          - generic [ref=e111]:
+            - generic [ref=e112]: Password
+            - generic [ref=e113]:
+              - textbox "Password" [ref=e115]:
+                - /placeholder: ••••••••
+              - button "Toggle password visibility" [ref=e117]
+          - button "Log in" [ref=e123]
+        - paragraph [ref=e126]: Don't have an account? Sign up
+      - paragraph [ref=e127]:
+        - text: Made by
+        - link "TheP4trik-tech" [ref=e128]:
+          - /url: https://github.com/TheP4trik-tech

@@ -1,0 +1,4 @@
+[     750ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :1
+[     750ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'. @ :1
+[     750ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :1
+[     750ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :1

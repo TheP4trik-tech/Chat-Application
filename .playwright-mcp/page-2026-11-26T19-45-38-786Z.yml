@@ -1,0 +1,54 @@
+- generic [ref=e4]:
+  - banner [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /about
+        - paragraph [ref=e13]: Chattero
+      - button "Features" [ref=e14]
+      - generic [ref=e15]:
+        - button "Toggle color scheme" [ref=e16]
+        - link "Log in" [ref=e20]:
+          - /url: /auth
+  - generic [ref=e25]:
+    - generic [ref=e26]: Private messaging, made simple
+    - heading "Chattero" [level=1] [ref=e39]
+    - paragraph [ref=e42]:
+      - generic [ref=e43]: Simple,
+      - generic [ref=e45]: secure,
+      - generic [ref=e47]: one-on-one
+      - generic [ref=e49]: messaging
+      - generic [ref=e51]: —
+      - generic [ref=e53]: "no"
+      - generic [ref=e55]: noise,
+      - generic [ref=e57]: just
+      - generic [ref=e59]: conversations
+      - generic [ref=e61]: that
+      - generic [ref=e63]: matter.
+    - generic [ref=e65]:
+      - link "Get started free" [ref=e67]:
+        - /url: /auth
+      - button "See how it works" [ref=e74]
+  - generic [ref=e78]:
+    - paragraph [ref=e79]: Because the best conversations happen without an audience. Chattero keeps every chat private, simple, and just between the two of you.
+    - generic [ref=e80]:
+      - generic [ref=e81]: Live
+      - paragraph [ref=e94]: A
+  - generic [ref=e102]:
+    - generic [ref=e105]:
+      - generic [ref=e106]: Speed
+      - generic [ref=e113]:
+        - paragraph [ref=e118]: Chattero team@chattero.app
+        - heading "Real-time feel" [level=2] [ref=e119]
+        - paragraph [ref=e120]: Messages land the moment you hit send — no refresh, no spinner, no waiting around. Conversations should flow, not load.
+    - generic [ref=e123]:
+      - generic [ref=e124]: Security
+      - generic [ref=e131]:
+        - paragraph [ref=e136]: Chattero team@chattero.app
+        - heading "Secure by default" [level=2] [ref=e137]
+        - paragraph [ref=e138]: Every chat is scoped to exactly two people. We use JWT-based auth under the hood, so there's no guessing who can read what.
+    - generic [ref=e141]:
+      - generic [ref=e142]: Simplicity
+      - generic [ref=e149]:
+        - paragraph [ref=e156]: Chattero team@chattero.app
+        - heading "Simple & fast" [level=2] [ref=e157]
+        - paragraph [ref=e158]: No read-receipt theatrics, no algorithmic feed, no noise. Just you and the person you're talking to — we kept everything else out of the way.

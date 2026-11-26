@@ -1,0 +1,52 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - heading "Chattero" [level=1] [ref=e12]
+    - paragraph [ref=e15]:
+      - generic [ref=e16]: Simple,
+      - generic [ref=e18]: secure,
+      - generic [ref=e20]: one-on-one
+      - generic [ref=e22]: messaging
+      - generic [ref=e24]: —
+      - generic [ref=e26]: "no"
+      - generic [ref=e28]: noise,
+      - generic [ref=e30]: just
+      - generic [ref=e32]: conversations
+      - generic [ref=e34]: that
+      - generic [ref=e36]: matter.
+    - button "Get started" [ref=e39]
+  - generic [ref=e43]:
+    - generic [ref=e45]:
+      - paragraph [ref=e49]: Real-time feel
+      - paragraph [ref=e50]: Messages land the moment you send them, no refresh needed.
+    - generic [ref=e52]:
+      - paragraph [ref=e56]: Secure by default
+      - paragraph [ref=e57]: JWT-based auth keeps every conversation locked to just the two of you.
+    - generic [ref=e59]:
+      - paragraph [ref=e63]: Simple & fast
+      - paragraph [ref=e64]: No clutter, no noise — just you and the people you talk to.
+  - generic [ref=e67]:
+    - generic [ref=e68]:
+      - heading "Chattero" [level=2] [ref=e73]
+      - generic [ref=e74]:
+        - tablist [ref=e75]:
+          - tab "Log in" [selected] [ref=e76]
+          - tab "Sign up" [ref=e78]
+        - tabpanel "Log in" [ref=e80]:
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e84]: Email
+              - textbox "Email" [ref=e86]:
+                - /placeholder: you@example.com
+            - generic [ref=e87]:
+              - generic [ref=e88]: Password
+              - generic [ref=e89]:
+                - textbox "Password" [ref=e91]:
+                  - /placeholder: ••••••••
+                - button "Toggle password visibility" [ref=e93]
+            - generic [ref=e99]: Forgot password?
+            - button "Log in" [ref=e100]
+      - paragraph [ref=e103]: Don't have an account? Sign up
+    - paragraph [ref=e104]:
+      - text: Made by
+      - link "TheP4trik-tech" [ref=e105]:
+        - /url: https://github.com/TheP4trik-tech

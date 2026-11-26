@@ -32,3 +32,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - `Message` validates that its `sender` is one of the chat's two participants.
 - **RabbitMQ is not implemented yet**, despite the project name — there's no `bunny` gem or publisher/consumer code in the codebase. Real-time delivery currently doesn't exist; the API is plain synchronous REST.
 - **Dev process orchestration** (`Procfile.dev`, run via `bin/dev`) starts Rails, Vite, and Postgres (`docker-compose up`, no `-d`, since foreman expects a foreground process per line) together.
+
+## Frontend status (as of 2026-11-26)
+
+- **Routing**: `/` redirects to `/about` (public landing page — hero, feature cards, scroll progress bar, all in `pages/About.jsx`). `/auth` is the login/signup form (`pages/AuthPage.jsx`). The authenticated app (`/chats`, `/users`, `/settings`, `/chat/:id`) sits behind `components/ProtectedRoute.tsx`, which redirects unauthenticated users to `/auth`. Two separate navbars exist: `PublicNavbar` (About/Auth) and `Navbar` (authenticated pages).
+- **Design is not finalized.** The visual design of the public pages (palette, card styling, layout) has gone through several full iterations and is still actively being changed — don't treat the current styling as settled.
+- **Known bug**: `App.jsx`'s `/chat/:id` route renders `<Chats/>` (the list page) instead of `<Chat/>` (the singular chat view) — still unfixed.
+- Uses `@mantine/core` for UI (not Tailwind/shadcn) and `framer-motion` for animation. Dark mode is wired via Mantine's `useMantineColorScheme()`; custom backgrounds use the CSS `light-dark()` function to adapt, since Mantine's own color-shade variables (`gray-0`..`gray-9`) do *not* shift between light/dark — use the semantic tokens (`--mantine-color-default`, `--mantine-color-default-border`) for anything that should adapt.

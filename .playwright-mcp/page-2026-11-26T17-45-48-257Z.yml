@@ -1,0 +1,42 @@
+- generic [ref=f6e160]:
+  - banner [ref=f6e161]:
+    - generic [ref=f6e162]:
+      - link [ref=f6e163] [cursor=pointer]:
+        - /url: /about
+        - paragraph [ref=f6e167]: Chattero
+      - generic [ref=f6e168]:
+        - button "Toggle color scheme" [ref=f6e169]
+        - link "← About" [ref=f6e173]:
+          - /url: /about
+  - generic [ref=f6e176]:
+    - generic [ref=f6e177]:
+      - heading "Chattero" [level=2] [ref=f6e182]
+      - tablist [ref=f6e184]:
+        - tab "Log in" [ref=f6e185]
+        - tab "Sign up" [active] [selected] [ref=f6e187]
+      - generic [ref=f6e218]:
+        - generic [ref=f6e219]:
+          - generic [ref=f6e220]:
+            - generic [ref=f6e221]: First name
+            - textbox "First name" [ref=f6e223]:
+              - /placeholder: Joe
+          - generic [ref=f6e224]:
+            - generic [ref=f6e225]: Last name
+            - textbox "Last name" [ref=f6e227]:
+              - /placeholder: Doe
+        - generic [ref=f6e228]:
+          - generic [ref=f6e229]: Email
+          - textbox "Email" [ref=f6e231]:
+            - /placeholder: you@example.com
+        - generic [ref=f6e232]:
+          - generic [ref=f6e233]: Password
+          - generic [ref=f6e234]:
+            - textbox "Password" [ref=f6e236]:
+              - /placeholder: ••••••••
+            - button "Toggle password visibility" [ref=f6e238]
+        - button "Create account" [ref=f6e244]
+      - paragraph [ref=f6e211]: Already have an account? Log in
+    - paragraph [ref=f6e212]:
+      - text: Made by
+      - link "TheP4trik-tech" [ref=f6e213]:
+        - /url: https://github.com/TheP4trik-tech
