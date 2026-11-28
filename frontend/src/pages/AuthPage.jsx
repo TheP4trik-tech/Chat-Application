@@ -31,51 +31,39 @@ function AuthPage() {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [error, setError] = useState(null) // null = no error to show
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const handleLogin = (e) => {
+  const [isSubmitting, setIsSubmitting] = useState(false) // preventing double submits
+  const authRequest = async (url, method, userInput, e) => {
       e.preventDefault()
-      console.log(`Hello ${email}!`)
-  }
-
-  // calling RAILS API
-  const handleSingup = async (e) => {
-    e.preventDefault()
-    setError(null) // clear the previous error before a new attempt
-    setIsSubmitting(true)
-
-    try {
-      const response = await fetch('http://localhost:3000/api/v1/signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          user: {
-            email: email,
-            password: password,
-            first_name: firstName,
-            last_name: lastName,
-          },
-        }),
-      })
-      const data = await response.json()
-
-      if (response.ok) {
-        const token = response.headers.get('Authorization')
-        const { first_name, last_name, id } = data.user
-        // storing the token and user data in local storage
-        localStorage.setItem('token', token)
-        localStorage.setItem('user', JSON.stringify({ id, first_name, last_name }))
-      } else {
-        // Rails answered, but said no (e.g. 422) → show its messages
-        setError(data.errors?.join(', ') || 'Sign up failed.')
+      setError(null)
+      setIsSubmitting(true)
+      try {
+          const response = await fetch(url, {
+              method: method,
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                  user: userInput,
+              })
+          })
+          const token = response.headers.get('Authorization')
+          const data = await response.json()
+          if (response.ok) {
+              localStorage.setItem('token', token)
+              const user = data.user
+              localStorage.setItem('user', JSON.stringify({id: user.id, first_name: user.first_name, last_name: user.last_name}))
+              window.location.href = '/users'
+          } else {
+              setError(data.errors?.join(', ') || 'Login failed.')
+          }
       }
-    } catch {
-      // Rails couldn't be reached at all
-      setError('Could not reach the server. Is Rails running?')
-    } finally {
-      setIsSubmitting(false)
-    }
+      catch (error){
+          setError('Could not reach the server with error:' + error)
+      }
+      finally {
+          setIsSubmitting(false)
+
+      }
   }
 
   return (
@@ -138,7 +126,9 @@ function AuthPage() {
                   {mode === 'login' ? (
                     <motion.form
                       key="login"
-                      onSubmit={handleLogin}
+                      onSubmit={(e) =>{
+                          authRequest('http://localhost:3000/api/v1/login', 'POST',
+                              { email: email, password: password }, e)}}
                       initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, x: -12 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, x: 12 }}
@@ -161,7 +151,9 @@ function AuthPage() {
                   ) : (
                     <motion.form
                       key="signup"
-                      onSubmit={handleSingup}
+                      onSubmit={(e) => {  authRequest('http://localhost:3000/api/v1/signup', 'POST',
+                          { first_name: firstName, last_name: lastName, email: email, password: password }, e)
+                      }}
                       initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, x: 12 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, x: -12 }}

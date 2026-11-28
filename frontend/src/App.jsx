@@ -6,7 +6,7 @@ import Users from './pages/Users.jsx'
 import Chats from './pages/Chats.jsx'
 import Chat from './pages/Chat.jsx'
 import {Navigate, Route, Routes, useLocation} from "react-router";
-import {ProtectedRoute} from "./components/ProtectedRoute.tsx";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 function PageTransition({ children }) {
     const prefersReducedMotion = useReducedMotion()
@@ -29,7 +29,7 @@ function App() {
     return(
     <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-            <Route path="/settings" element={<ProtectedRoute><Settings /> </ProtectedRoute>} />
+            <Route path="/profile" element={<ProtectedRoute><Profile /> </ProtectedRoute>} />
             <Route path="/users" element={<ProtectedRoute><Users /> </ProtectedRoute>}  />
             <Route path="/chats" element={<ProtectedRoute><Chats /> </ProtectedRoute>} />
             <Route path="/chat/:id" element={<ProtectedRoute><Chats /> </ProtectedRoute>} />
